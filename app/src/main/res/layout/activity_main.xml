@@ -7,22 +7,21 @@
     tools:context=".MainActivity"
 
     >
-<!-- -->
+    <!-- -->
     <!--tiles wrapper-->
 
     <RelativeLayout
         android:id="@+id/relativeLayout0"
-        android:layout_width="409dp"
-        android:layout_height="500dp"
+        android:layout_width="329dp"
+        android:layout_height="519dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="104dp"
 
         android:layout_weight="1"
         android:gravity="center_vertical|center_horizontal|center"
         android:paddingTop="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
 
@@ -32,775 +31,680 @@
             android:backgroundTint="@color/white"
             android:columnCount="8"
             android:rowCount="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             tools:layout_editor_absoluteX="45dp"
             tools:layout_editor_absoluteY="97dp">
 
             <com.charliea.minesweeper.gameButton
 
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-
-                
-                android:backgroundTint="@color/green"
                 android:id="@+id/_00"
-                >
+                android:layout_width="40dp"
+
+
+                android:layout_height="40dp"
+                android:backgroundTint="@color/green">
 
 
             </com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_01"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
-                
-                
-                
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_02"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_03"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_04"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_05"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_06"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_07"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_10"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_11"
-
-
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
 
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_12"
-
-
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
 
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_13"
-
-
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
 
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_14"
-
-
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
 
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_15"
-
-
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
 
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_16"
-
-
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
 
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_17"
-
-
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
 
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_20"
-
-
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
 
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_21"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_22"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_23"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_24"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_25"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_26"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_27"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_30"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_31"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_32"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_33"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_34"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_35"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_36"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_37"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_40"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_41"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_42"
-
-
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
 
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_43"
-
-
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
 
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_44"
-
-
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
 
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_45"
-
-
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
 
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_46"
-
-
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
 
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_47"
-
-
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
 
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_50"
-
-
+                android:layout_width="40dp"
+                android:layout_height="40dp"
 
 
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_51"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_52"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_53"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_54"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_55"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_56"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_57"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_60"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_61"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_62"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_63"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_64"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_65"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_66"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_67"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_70"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_71"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_72"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_73"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_74"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_75"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_76"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_77"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_80"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_81"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_82"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_83"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_84"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_85"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_86"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_87"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_90"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_91"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_92"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_93"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_94"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_95"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/_96"
-                
-                
-                
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
 
             <com.charliea.minesweeper.gameButton
+                android:id="@+id/_97"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:id="@+id/_97"
-                
-                
-                
+
+
                 android:backgroundTint="@color/green"></com.charliea.minesweeper.gameButton>
         </GridLayout>
 
 
-
     </RelativeLayout>
 
-    <com.charliea.minesweeper.gameButton
-        android:layout_width="57dp"
+    <Button
         android:id="@+id/toggler"
+        android:layout_width="57dp"
 
         android:layout_height="46dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="64dp"
         android:backgroundTint="@color/white"
         android:contextClickable="true"
+        android:outlineAmbientShadowColor="@color/white"
         android:text="@string/pick"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:outlineAmbientShadowColor="@color/white"></com.charliea.minesweeper.gameButton>
+        app:layout_constraintRight_toRightOf="parent"></Button>
 
     <LinearLayout
-        android:layout_width="299dp"
-        android:layout_height="108dp"
+        android:layout_width="298dp"
+        android:layout_height="91dp"
         android:gravity="bottom"
         android:textAlignment="gravity"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -840,3 +744,10 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+

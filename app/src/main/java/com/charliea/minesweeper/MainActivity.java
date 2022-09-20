@@ -138,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
 
         int n = 0;
         for(gameButton i : btns){
+            i.setId(n);
             //check above/left for mine (nothing on n % 8=0 or n < 8)
             if( !((n%8==0) || n < 8)){
                 if(btns.get(n-9).getMineStat())
@@ -189,9 +190,44 @@ public class MainActivity extends AppCompatActivity {
             i.setOnClickListener(
                     new gameButton.OnClickListener(){
                         public void onClick(View v){
-                            if(i.clicked(flagging)){
-                                //lose
+                            switch(i.clicked(flagging)) {
+                                case 2:
+                                    int id = i.getId();
+                                    if( !((id%8==0) || id < 8)){
+                                        btns.get(id-9).reveal();
+                                    }
+                                    //check above (-8) (nothing on < 8)
+                                    if(!(id<8)){
+                                        btns.get(id-8).reveal();
+                                    }
+                                    //check above right (-7) (edge on 7 15 23 31 or (n+1) %8 == 0)
+                                    if (! ((id<8) || (((id+1)%8) == 0)) ) {
+                                        btns.get(id-7).reveal();
+
+                                    }
+                                    //check right (nothing on (n+1) % 8 == 0)
+                                    if( !((id+1)%8==0) ){
+                                        btns.get(id+1).reveal();
+
+                                    }
+                                    //check right/below (nothing on (n+1) % 8 == 0) or (n > 71)
+                                    if( !( ((id+1)%8==0) || (id>71) )){
+                                        btns.get(id+9).reveal();
+                                    }
+                                    //check below (nothing on n>71)
+                                    if(!(id>71)){
+                                        btns.get(id+8).reveal();
+                                    }
+                                    //check below/left (nothing on n>71 or n%8==0)
+                                    if(!((id>71)||(id%8==0))){
+                                        btns.get(id+7).reveal();
+                                    }
+                                    //check left (nothing on n%8==0)
+                                    if(!(id%8==0)){
+                                        btns.get(id-1).reveal();
+                                    }
                             }
+
                         }
                     }
             );
@@ -220,5 +256,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
 
 }
