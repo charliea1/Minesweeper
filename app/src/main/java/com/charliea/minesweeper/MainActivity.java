@@ -370,6 +370,8 @@ public class MainActivity extends AppCompatActivity {
         try{Thread.sleep(2000);}
         catch(Exception e){}
         Intent intent = new Intent(this, resultsPage.class);
+        intent.putExtra("time",time);
+        intent.putExtra("won",won);
         startActivity(intent);
     }
 

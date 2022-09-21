@@ -746,7 +746,7 @@
         android:id="@+id/tileCount"
         android:layout_width="200dp"
         android:layout_height="100dp"
-
+        android:visibility="invisible"
         android:text="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
