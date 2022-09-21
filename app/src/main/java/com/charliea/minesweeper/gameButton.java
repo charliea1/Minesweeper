@@ -45,19 +45,24 @@ public class gameButton extends androidx.appcompat.widget.AppCompatButton{
         return hasMine;
     }
 
+    //return -1 for removing flag
+    // return -2 for adding flag
+    //return 0 if neutral
+    //return 1 if mine clicked
+    //return 2 if empty space (no adjacent bombs) clicked
     public int clicked(boolean flagging) {
         //flagging
         if (flagging) {
             if (this.flagged) {
                 this.flagged = false;
                 this.setText("");
-                return 0;
+                return -1;
             } else if (this.already_clicked) {
                 return 0;
             }
             this.flagged = true;
             this.setText(getResources().getText(R.string.flag));
-            return 0;
+            return -2;
         }
 
         //not flagging

@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.provider.FontRequest;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
@@ -36,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
+        //init timer
+        TextView timer = findViewById(R.id.timer);
+        runTimer(timer);
 
 
         ArrayList<gameButton> btns = new ArrayList<gameButton>();
@@ -191,7 +196,32 @@ public class MainActivity extends AppCompatActivity {
                     new gameButton.OnClickListener(){
                         public void onClick(View v){
                             switch(i.clicked(flagging)) {
-                                case 2:
+                                //if mine hit
+                                case 1:
+                                    String time = timer.getText().toString();
+                                    timer.setVisibility(View.INVISIBLE);
+
+                                    break;
+                                //here we subtract from flag count
+                                case -2:
+                                    TextView flagView = findViewById(R.id.flags);
+                                    String tempFlags = flagView.getText().toString();
+                                    int numflags = Integer.parseInt(tempFlags);
+                                    numflags--;
+                                    tempFlags = String.valueOf(numflags);
+                                    flagView.setText(tempFlags);
+                                    break;
+
+                                case -1:
+                                    TextView flagView1 = findViewById(R.id.flags);
+                                    String tempFlags1 = flagView1.getText().toString();
+                                    int numflags1 = Integer.parseInt(tempFlags1);
+                                    numflags1++;
+                                    tempFlags1 = String.valueOf(numflags1);
+                                    flagView1.setText(tempFlags1);
+                                    break;
+
+                                    case 2:
                                     int id = i.getId();
                                     if( !((id%8==0) || id < 8)){
                                         btns.get(id-9).reveal();
@@ -203,12 +233,10 @@ public class MainActivity extends AppCompatActivity {
                                     //check above right (-7) (edge on 7 15 23 31 or (n+1) %8 == 0)
                                     if (! ((id<8) || (((id+1)%8) == 0)) ) {
                                         btns.get(id-7).reveal();
-
                                     }
                                     //check right (nothing on (n+1) % 8 == 0)
                                     if( !((id+1)%8==0) ){
                                         btns.get(id+1).reveal();
-
                                     }
                                     //check right/below (nothing on (n+1) % 8 == 0) or (n > 71)
                                     if( !( ((id+1)%8==0) || (id>71) )){
@@ -226,6 +254,7 @@ public class MainActivity extends AppCompatActivity {
                                     if(!(id%8==0)){
                                         btns.get(id-1).reveal();
                                     }
+                                    break;
                             }
 
                         }
@@ -255,6 +284,26 @@ public class MainActivity extends AppCompatActivity {
                 g.clicked(flagging);
 
         }
+    }
+
+
+    public void runTimer(TextView v){
+        final Handler handler = new Handler();
+        handler.post(new Runnable(){
+            @Override
+            public void run(){
+                    String timeStr = v.getText().toString();
+                    int seconds = Integer.parseInt(timeStr);
+                    if (seconds == 999) {
+                        return;
+                    }
+                    seconds++;
+                    timeStr = String.valueOf(seconds);
+                    v.setText(timeStr);
+                    handler.postDelayed(this, 1000);
+
+            }
+        });
     }
 
 
