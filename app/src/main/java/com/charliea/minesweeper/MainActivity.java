@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.provider.FontRequest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -196,11 +197,21 @@ public class MainActivity extends AppCompatActivity {
                     new gameButton.OnClickListener(){
                         public void onClick(View v){
                             switch(i.clicked(flagging)) {
+                                //update storage view for number of tiles cleared and check for 76
+                                case 3:
+                                    TextView tiles = findViewById(R.id.tileCount);
+                                    String temp = tiles.getText().toString();
+                                    int numTiles = Integer.parseInt(temp);
+                                    numTiles++;
+                                    temp = String.valueOf(numTiles);
+                                    tiles.setText(temp);
+                                    break;
+
                                 //if mine hit
                                 case 1:
                                     String time = timer.getText().toString();
                                     timer.setVisibility(View.INVISIBLE);
-
+                                    gameFinish(time,false);
                                     break;
                                 //here we subtract from flag count
                                 case -2:
@@ -223,40 +234,89 @@ public class MainActivity extends AppCompatActivity {
 
                                     case 2:
                                     int id = i.getId();
+                                    int count = 0;
                                     if( !((id%8==0) || id < 8)){
+
+                                        if(!btns.get(id-9).isClear())
+                                            count++;
                                         btns.get(id-9).reveal();
+
                                     }
                                     //check above (-8) (nothing on < 8)
                                     if(!(id<8)){
+
+                                        if(!btns.get(id-8).isClear())
+                                            count++;
                                         btns.get(id-8).reveal();
+
                                     }
                                     //check above right (-7) (edge on 7 15 23 31 or (n+1) %8 == 0)
                                     if (! ((id<8) || (((id+1)%8) == 0)) ) {
+
+                                        if(!btns.get(id-7).isClear())
+                                            count++;
                                         btns.get(id-7).reveal();
                                     }
                                     //check right (nothing on (n+1) % 8 == 0)
                                     if( !((id+1)%8==0) ){
+
+                                        if(!btns.get(id+1).isClear())
+                                            count++;
                                         btns.get(id+1).reveal();
                                     }
                                     //check right/below (nothing on (n+1) % 8 == 0) or (n > 71)
                                     if( !( ((id+1)%8==0) || (id>71) )){
+
+                                        if(!btns.get(id+9).isClear())
+                                            count++;
                                         btns.get(id+9).reveal();
                                     }
                                     //check below (nothing on n>71)
                                     if(!(id>71)){
+
+                                        if(!btns.get(id+8).isClear())
+                                            count++;
                                         btns.get(id+8).reveal();
                                     }
                                     //check below/left (nothing on n>71 or n%8==0)
                                     if(!((id>71)||(id%8==0))){
+
+                                        if(!btns.get(id+7).isClear())
+                                            count++;
                                         btns.get(id+7).reveal();
                                     }
                                     //check left (nothing on n%8==0)
                                     if(!(id%8==0)){
+
+                                        if(!btns.get(id-1).isClear())
+                                            count++;
                                         btns.get(id-1).reveal();
                                     }
+
+                                    TextView tiles1 = findViewById(R.id.tileCount);
+                                    String temp1 = tiles1.getText().toString();
+                                    int numTiles1 = Integer.parseInt(temp1);
+                                    numTiles1 += count+1;
+                                    temp1 = String.valueOf(numTiles1);
+                                    tiles1.setText(temp1);
+                                        /*if(numTiles1>=76){
+                                            String time1 = timer.getText().toString();
+                                            timer.setVisibility(View.INVISIBLE);
+                                            gameFinish(time1,true);
+                                            break;
+                                        }*/
+
                                     break;
                             }
+                            TextView check = findViewById(R.id.tileCount);
+                            int tilesOpen = Integer.parseInt(check.getText().toString());
+                            int threshold = 76;
+                            if(tilesOpen>=threshold){
+                                String time_taken = timer.getText().toString();
+                                timer.setVisibility(View.INVISIBLE);
+                                gameFinish(time_taken,true);
 
+                            }
                         }
                     }
             );
@@ -304,6 +364,13 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void gameFinish(String time, boolean won){
+        try{Thread.sleep(2000);}
+        catch(Exception e){}
+        Intent intent = new Intent(this, resultsPage.class);
+        startActivity(intent);
     }
 
 

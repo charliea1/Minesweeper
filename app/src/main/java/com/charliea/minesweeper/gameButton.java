@@ -82,7 +82,7 @@ public class gameButton extends androidx.appcompat.widget.AppCompatButton{
                 this.setBackgroundTintList(getResources().getColorStateList(R.color.beige));
 
                 this.setText(String.valueOf(this.mines));
-                return 0;
+                return 3;
             }
 
             //case blank square
@@ -103,6 +103,9 @@ public class gameButton extends androidx.appcompat.widget.AppCompatButton{
             this.setText("");
     }
 
+    public boolean isClear(){
+        return this.already_clicked;
+    }
 
 
 }

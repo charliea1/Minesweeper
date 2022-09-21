@@ -2,9 +2,9 @@
     <!--Didn't know how else to do this-->
     <string name="app_name">CS 310\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCharlie Hill</string>
 
-        <string name="clock">\uD83D\uDD53</string>
-        <string name="flag">\uD83D\uDEA9</string>
-        <string name="mine">\uD83D\uDCA3</string>
-        <string name="pick">\u26CF</string>
+    <string name="clock">\uD83D\uDD53</string>
+    <string name="flag">\uD83D\uDEA9</string>
+    <string name="mine">\uD83D\uDCA3</string>
+    <string name="pick">\u26CF</string>
 
 </resources>
