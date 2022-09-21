@@ -233,7 +233,7 @@ public class MainActivity extends AppCompatActivity {
                                     break;
 
                                     case 2:
-                                    int id = i.getId();
+                                    /*int id = i.getId();
                                     int count = 0;
                                     if( !((id%8==0) || id < 8)){
 
@@ -291,7 +291,8 @@ public class MainActivity extends AppCompatActivity {
                                         if(!btns.get(id-1).isClear())
                                             count++;
                                         btns.get(id-1).reveal();
-                                    }
+                                    }*/
+                                    int count = i.revealRecurse(btns);
 
                                     TextView tiles1 = findViewById(R.id.tileCount);
                                     String temp1 = tiles1.getText().toString();

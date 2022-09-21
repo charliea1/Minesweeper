@@ -4,6 +4,8 @@ import android.util.AttributeSet;
 
 import android.widget.Button;
 
+import java.util.ArrayList;
+
 public class gameButton extends androidx.appcompat.widget.AppCompatButton{
     private boolean hasMine = false;
     private boolean flagged = false;
@@ -101,6 +103,70 @@ public class gameButton extends androidx.appcompat.widget.AppCompatButton{
             this.setText(String.valueOf(this.mines));
         else
             this.setText("");
+    }
+
+    public int revealRecurse(ArrayList<gameButton> btns){
+        //if(this.already_clicked){
+        //    return 0;
+        //}
+        this.reveal();
+        if(this.mines>0){
+            return 1;
+        }
+        int count = 1;
+        if( !((id%8==0) || id < 8)){
+
+            if(!btns.get(id-9).isClear())
+                count += btns.get(id-9).revealRecurse(btns);
+
+        }
+        //check above (-8) (nothing on < 8)
+        if(!(id<8)){
+
+            if(!btns.get(id-8).isClear() && !btns.get(id-8).flagged)
+                count += btns.get(id-8).revealRecurse(btns);
+
+        }
+        /*
+        //check above right (-7) (edge on 7 15 23 31 or (n+1) %8 == 0)
+        if (! ((id<8) || (((id+1)%8) == 0)) ) {
+
+            if(!btns.get(id-7).isClear())
+                count += btns.get(id-7).revealRecurse(btns);
+        }*/
+        //check right (nothing on (n+1) % 8 == 0)
+        if( !((id+1)%8==0) ){
+
+            if(!btns.get(id+1).isClear() && !btns.get(id+1).flagged)
+                count += btns.get(id+1).revealRecurse(btns);
+        }
+        /*
+        //check right/below (nothing on (n+1) % 8 == 0) or (n > 71)
+        if( !( ((id+1)%8==0) || (id>71) )){
+
+            if(!btns.get(id+9).isClear())
+                count += btns.get(id+9).revealRecurse(btns);
+        }*/
+        //check below (nothing on n>71)
+        if(!(id>71)){
+
+            if(!btns.get(id+8).isClear() && !btns.get(id+8).flagged)
+                count += btns.get(id+8).revealRecurse(btns);
+        }
+        /*
+        //check below/left (nothing on n>71 or n%8==0)
+        if(!((id>71)||(id%8==0))){
+
+            if(!btns.get(id+7).isClear())
+                count += btns.get(id+7).revealRecurse(btns);
+        }*/
+        //check left (nothing on n%8==0)
+        if(!(id%8==0)){
+
+            if(!btns.get(id-1).isClear() && !btns.get(id-1).flagged)
+                count += btns.get(id-1).revealRecurse(btns);
+        }
+        return count;
     }
 
     public boolean isClear(){
